@@ -1,6 +1,6 @@
 """receive user input and calculate the user’s age in a future year."""
 
-age = int(input("How old are you?: "))
+age = int(input("How old are you? "))
 future_year = 2050
 current_year = 2023
 
