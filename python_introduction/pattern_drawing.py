@@ -5,5 +5,5 @@ n = size
 while n > 0:
     for i in range(size):
         print("*", end="")
-    print()
+    print(end="\n")
     n -= 1
