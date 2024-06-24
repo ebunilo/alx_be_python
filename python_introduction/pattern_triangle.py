@@ -1,8 +1,8 @@
 """Triangle pattern"""
-n = int(input("Enter the number of rows: "))
+rows = int(input("Enter the number of rows: "))
 i = 0
 j = 0
-k = n
+k = rows
 
 while i < n:
     print(" " * (k - 1), end="")
