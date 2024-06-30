@@ -4,7 +4,7 @@ i = 0
 j = 0
 k = rows
 
-while i < n:
+while i < rows:
     print(" " * (k - 1), end="")
     print("*" * (j + 1), end="")
     print(end="\n")
