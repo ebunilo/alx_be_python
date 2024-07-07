@@ -30,7 +30,7 @@ def convert_to_fahrenheit(celsius):
 
 
 temp = input("Enter the temperature to convert: ")
-unit = input("Is this temperature in Celcius or Fahrenheit? (C/F): ")
+unit = input("Is this temperature in Celcius or Fahrenheit? (C/F):")
 unit = unit.upper()
 
 # check if the input is numeric
