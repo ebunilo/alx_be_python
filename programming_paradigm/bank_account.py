@@ -1,4 +1,4 @@
-class BankAccount():
+class BankAccount:
 
     """
     A class that performs banking operations.
@@ -13,8 +13,8 @@ class BankAccount():
         self.account_balance += amount
 
     def withdraw(self, amount):
-        """Withdraw amount from account balance
-        if insufficient balance, return False
+        """Withdraw amount from account balance.
+        If insufficient balance, return False
         """
         if amount > self.account_balance:
             return False
@@ -23,6 +23,5 @@ class BankAccount():
             return True
 
     def display_balance(self):
-        """Display account balance"""
-        print(f'Current Balance: ${self.account_balance}')
-    
+        """Display current account balance"""
+        print(f"Current balance: ${self.account_balance}")
