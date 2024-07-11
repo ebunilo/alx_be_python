@@ -23,10 +23,6 @@ def main():
     print("\nAvailable books after returning '1984':")
     library.list_available_books()
 
-    # Print all books with their status
-    print("\nAll books with their status:")
-    library.all_books()
-
 
 if __name__ == "__main__":
     main()

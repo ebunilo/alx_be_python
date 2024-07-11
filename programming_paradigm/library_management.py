@@ -52,17 +52,3 @@ class Library:
             book for book in self.__books if not book.is_checked_out()]
         for book in available_books:
             print(f'{book.title} by {book.author}')
-
-    def all_books(self):
-        """Display all books in the library"""
-        for book in self.__books:
-            print(f'{book.title} by {book.author}, {book.is_checked_out()=}')
-
-
-# book1 = Book("The Fury", "Dan Brown")
-# book2 = Book("Lost Kingdom", "Kevin Hart")
-# book3 = Book("The last day", "Robert Langston")
-
-# library = Library()
-# library.add_book(Book("Brave New World", "Aldous Huxley"))
-# library.add_book(Book("1984", "George Orwell"))
