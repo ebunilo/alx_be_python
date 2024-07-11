@@ -2,6 +2,12 @@ class Book:
     """Book class"""
 
     def __init__(self, title, author):
+        """Initialize Book class
+
+        Args:
+            title (str): Title of the book
+            author (str): Author of the book
+        """
         self.title = title
         self.author = author
         self.__is_checked_out = False
@@ -11,6 +17,7 @@ class Book:
         return self.__is_checked_out
 
     def set_status(self, status):
+        """Set the status of a book"""
         self.__is_checked_out = status
 
 
@@ -18,6 +25,7 @@ class Library:
     """Library class"""
 
     def __init__(self):
+        """Initialize Library class"""
         self.__books = []
 
     def add_book(self, book):
