@@ -28,32 +28,28 @@ class Book:
             return True
         return False
 
-    def set_status(self, status):
-        """Set the status of a book"""
-        self.__is_checked_out = status
-
 
 class Library:
     """Library class"""
 
     def __init__(self):
         """Initialize Library class"""
-        self.__books = []
+        self._books = []
 
     def add_book(self, book):
         """Add a book to the library"""
-        self.__books.append(book)
+        self._books.append(book)
 
     def check_out_book(self, title):
         """Check out a book from the library"""
-        for book in self.__books:
+        for book in self._books:
             if book.title == title:
                 return book.check_out()
         return None
 
     def return_book(self, title):
         """Return a book to the library"""
-        for book in self.__books:
+        for book in self._books:
             if book.title == title:
                 return book.return_book()
         return None
@@ -61,6 +57,6 @@ class Library:
     def list_available_books(self):
         """Display available books in the library"""
         available_books = [
-            book for book in self.__books if not book.is_checked_out()]
+            book for book in self._books if not book.is_checked_out()]
         for book in available_books:
             print(f'{book.title} by {book.author}')
