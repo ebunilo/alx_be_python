@@ -16,6 +16,18 @@ class Book:
         """Check if a book is checked out"""
         return self.__is_checked_out
 
+    def check_out(self):
+        if not self.__is_checked_out:
+            self.__is_checked_out = True
+            return True
+        return False
+
+    def return_book(self):
+        if self.__is_checked_out:
+            self.__is_checked_out = False
+            return True
+        return False
+
     def set_status(self, status):
         """Set the status of a book"""
         self.__is_checked_out = status
@@ -36,13 +48,15 @@ class Library:
         """Check out a book from the library"""
         for book in self.__books:
             if book.title == title:
-                book.set_status(True)
+                return book.check_out()
+        return None
 
     def return_book(self, title):
         """Return a book to the library"""
         for book in self.__books:
             if book.title == title:
-                book.set_status(False)
+                return book.return_book()
+        return None
 
     def list_available_books(self):
         """Display available books in the library"""
