@@ -1,6 +1,6 @@
 class Book:
     """ A Book class that implements both __str__ and __repr__ magic methods to provide
-    different string representations of the book object."""
+    different string representations of the Book object."""
     def __init__(self, title, author, pages):
         self.title = title
         self.author = author
