@@ -17,10 +17,10 @@ myresult = mycursor.fetchall()
 
 for i in myresult:
     print(i)
-
-sql = "INSERT INTO employees (EmployeeID, FirstName, LastName, Department, HireDate) VALUES (6, 'Lynda', 'Anyanwu', 'Accounts', '2020-07-05')"
-mycursor.execute(sql)
-mydb.commit()
+#
+# sql = "INSERT INTO employees (EmployeeID, FirstName, LastName, Department, HireDate) VALUES (7, 'Angela', 'Ugwuka', 'IT', '2023-07-05')"
+# mycursor.execute(sql)
+# mydb.commit()
 
 mycursor.close()
 mydb.close()
