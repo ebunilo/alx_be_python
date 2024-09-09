@@ -1,4 +1,7 @@
-"""Calculates the area of a rectangle"""
+"""
+Calculates the area of a rectangle
+given its length and width
+"""
 
 length = 10
 width = 5
