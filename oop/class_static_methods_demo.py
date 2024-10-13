@@ -30,7 +30,7 @@ class Calculator:
         return a + b
 
     @classmethod
-    def multiply(cls, a: float, b: float):
+    def multiply(cls, a, b):
         """
         Multiplies two numbers, displaying the calculation type.
 
